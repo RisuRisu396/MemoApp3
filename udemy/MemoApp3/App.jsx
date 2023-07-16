@@ -6,32 +6,28 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.appbar}>
         <View style={styles.appbarInner}>
-          <Text style={styles.appbarTItle}>MemoApp</Text>
-          <Text style={styles.appbarRight}>ログアウト</Text>
+          <Text style={styles.appbarTitle}>Memo App</Text>
+          <Text style={styles.appbarRight}> ログアウト</Text>
         </View>
       </View>
-      <View>
-        <View style={styles.memoListItem}>
-          <View>
-            <Text style={styles.memoListItemTitle}>買い物リスト</Text>
-            <Text style={styles.memoListItemDate}>2020年12月24日 10:00</Text>
-          </View>
-          <View >
-            <Text>X</Text>
-          </View>
+      <View style={styles.memoListItem}>
+        <View>
+          <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+          <Text style={styles.memoListItemDate}>2020年12月24日 10:00</Text>
         </View>
+        <Text>X</Text>
       </View>
-      <View style={styles.circleButton}>
-        <Text style={styles.circleButtonText}>+</Text>
+      <View style={styles.circllueButton}>
+        <Text style={styles.circllueButtonLabel}>+</Text>
       </View>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#F0F4F8',
   },
   appbar: {
     width: '100%',
@@ -48,12 +44,12 @@ const styles = StyleSheet.create({
     buttom: 16,
     color: 'rgba(255,255,255,0.8)',
   },
-  appbarTItle: {
-    margin: 8,
-    fontSize: 24,
-    lineHeight:32,
+  appbarTitle: {
+    marginBottom: 8,
+    fontSize: 22,
+    lineHeight: 32,
+    color: '#ffffff',
     fontWeight: 'bold',
-    color: '#ffffff'
   },
   memoListItem: {
     backgroundColor: '#ffffff',
@@ -64,6 +60,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 1,
     borderColor: 'rgba(0,0,0,0.15)',
+
   },
   memoListItemTitle: {
     fontSize: 16,
@@ -74,24 +71,25 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     color: '#848484',
   },
-  circleButton: {
+  circllueButton: {
     backgroundColor: '#467FD3',
-    width:64,
+    width: 64,
     height: 64,
     borderRadius: 32,
-    justifyContent:'center',
+    justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
     right: 40,
     bottom: 40,
     shadowColor: '#000000',
-    shadowOffset: {width: 0, height: 8},
+    shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.25,
     shadowRadius: 8,
+    elevation: 8,
   },
-  circleButtonText: {
+  circllueButtonLabel: {
     color: '#ffffff',
     fontSize: 40,
     lineHeight: 40,
-  }
+  },
 });
