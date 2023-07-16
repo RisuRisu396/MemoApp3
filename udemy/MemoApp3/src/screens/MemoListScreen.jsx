@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import AppBar from '../components/AppBar';
 import MemoList from '../components/MemoList';
 import CircleButton from '../components/CircleButton';
+import { Feather } from '@expo/vector-icons';
 
 export default function MemoListScreen() {
   return (
